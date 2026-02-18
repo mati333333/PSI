@@ -1,0 +1,17 @@
+zadanie B6
+
+ocena_kredytowa = function(dochod, zadluzenie) {
+  wskaznik = zadluzenie / dochod
+  
+  if (wskaznik < 0.30) {
+    return("KREDYT PRZYZNANY")
+  } else if (wskaznik >= 0.30 && wskaznik <= 0.50) {
+    return("WYMAGA WERYFIKACJI")
+  } else {
+    return("KREDYT ODRZUCONY")
+  }
+}
+
+ocena_kredytowa(10000, 2000)
+ocena_kredytowa(10000, 4000)
+ocena_kredytowa(10000, 6000)
